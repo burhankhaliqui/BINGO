@@ -1,0 +1,46 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.scene.control.*?>-->
+<!--<?import javafx.scene.layout.*?>-->
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.effect.*?>-->
+
+<!--<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"-->
+<!--      fx:controller="mediaworking.GameSmiths.WinnerScreenController"-->
+<!--      style="-fx-background-color: linear-gradient(to bottom right, #1a2a6c, #b21f1f, #fdbb2d); -fx-padding: 30;">-->
+
+<!--    <effect>-->
+<!--        <DropShadow color="#00000080" radius="10" spread="0.1" />-->
+<!--    </effect>-->
+
+<!--    <Label text="Game Over!" style="-fx-font-size: 52px; -fx-font-weight: bold; -fx-text-fill: #FFD700; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">-->
+<!--        <effect>-->
+<!--            <Glow level="0.7" />-->
+<!--        </effect>-->
+<!--    </Label>-->
+
+<!--    <Label fx:id="winnerLabel" text="Winner: Player 1" style="-fx-font-size: 38px; -fx-font-weight: bold; -fx-text-fill: #FF4500; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 6, 0, 0, 0);" />-->
+
+<!--    &lt;!&ndash; Dynamic Player Boards &ndash;&gt;-->
+<!--    <VBox fx:id="playersContainer" spacing="20.0" alignment="CENTER"-->
+<!--          style="-fx-padding: 10; -fx-background-color: rgba(255,255,255,0.15); -fx-background-radius: 15;">-->
+<!--        <effect>-->
+<!--            <DropShadow color="#00000040" radius="10" spread="0.1" />-->
+<!--        </effect>-->
+<!--    </VBox>-->
+
+<!--    &lt;!&ndash; Return to Main Menu Button &ndash;&gt;-->
+<!--    <Button text="Return to Main Menu" onAction="#returnToMainMenu"-->
+<!--            style="-fx-background-color: linear-gradient(#ffd65b, #e68400);-->
+<!--                   -fx-text-fill: #654b00;-->
+<!--                   -fx-font-size: 24px;-->
+<!--                   -fx-font-weight: bold;-->
+<!--                   -fx-padding: 15 30;-->
+<!--                   -fx-cursor: hand;-->
+<!--                   -fx-background-radius: 30;-->
+<!--                   -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);">-->
+<!--        <VBox.margin>-->
+<!--            <Insets top="30.0"/>-->
+<!--        </VBox.margin>-->
+<!--    </Button>-->
+<!--</VBox>-->

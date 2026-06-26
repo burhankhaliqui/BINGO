@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="mediaworking.GameSmiths.controllers.WinnerScreenController"
+           style="-fx-background-color: linear-gradient(to bottom right, #1a2a6c, #b21f1f, #fdbb2d);">
+
+    <VBox alignment="CENTER" spacing="30.0" maxWidth="600" maxHeight="400"
+          style="-fx-background-color: rgba(255,255,255,0.2); -fx-background-radius: 20;">
+        <padding>
+            <Insets top="30" right="30" bottom="30" left="30"/>
+        </padding>
+        <effect>
+            <DropShadow color="rgba(0,0,0,0.5)" radius="10" spread="0.1"/>
+        </effect>
+
+        <Label text="🎉 Congratulations! 🎉" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: white;">
+            <effect>
+                <Glow level="0.8"/>
+            </effect>
+        </Label>
+
+        <Label fx:id="winnerLabel" style="-fx-font-size: 48px; -fx-font-weight: bold; -fx-text-fill: #FFD700;">
+            <effect>
+                <DropShadow color="rgba(0,0,0,0.5)" radius="5" spread="0.1"/>
+            </effect>
+        </Label>
+
+        <Button text="Return to Main Menu" onAction="#returnToMainMenu"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 18px; -fx-padding: 10 20; -fx-background-radius: 5;">
+            <effect>
+                <DropShadow color="rgba(0,0,0,0.3)" radius="5" spread="0.1"/>
+            </effect>
+        </Button>
+    </VBox>
+</StackPane>

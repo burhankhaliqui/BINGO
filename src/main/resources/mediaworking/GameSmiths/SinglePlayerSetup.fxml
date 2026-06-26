@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediaworking.GameSmiths.controllers.SinglePlayerSetupController">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="600" fitWidth="800" preserveRatio="false">
+        <image>
+            <Image url="@1singleplayer.jpg" />
+        </image>
+    </ImageView>
+
+    <AnchorPane prefHeight="600" prefWidth="800">
+        <VBox alignment="CENTER" spacing="40" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <VBox alignment="CENTER" maxWidth="400" spacing="20" style="-fx-background-color: rgba(255,255,255,0.1); -fx-padding: 30; -fx-background-radius: 15;">
+                <effect>
+                    <DropShadow color="rgba(0,0,0,0.3)" radius="10" spread="0.1" />
+                </effect>
+
+                <Label style="-fx-font-size: 40; -fx-font-weight: bold; -fx-text-fill: white;">
+                    <effect>
+                        <DropShadow color="rgba(0,0,0,0.5)" radius="10" spread="0.2" />
+                    </effect>
+                </Label>
+                <TextField fx:id="playerNameField" promptText="Your Name" style="-fx-font-size: 16; -fx-background-radius: 10; -fx-background-color: rgba(255,255,255,0.9);" />
+                <ChoiceBox fx:id="boardSizeChoice" style="-fx-font-size: 16; -fx-background-radius: 10; -fx-background-color: rgba(255,255,255,0.9);">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="3" />
+                            <String fx:value="5" />
+                            <String fx:value="7" />
+
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+
+                <Label style="-fx-font-size: 18; -fx-text-fill: white;" />
+
+                <Label style="-fx-font-size: 18; -fx-text-fill: white;" />
+
+                <Label style="-fx-font-size: 18; -fx-text-fill: white;" />
+
+                <Label style="-fx-font-size: 18; -fx-text-fill: white;" />
+            </VBox>
+
+            <Region prefHeight="50" /> <!-- This adds some space before the button -->
+
+            <Button fx:id="btnStartGame" prefHeight="74.0" prefWidth="159.0" style="-fx-font-size: 20; -fx-background-color: #00b894; -fx-text-fill: white; -fx-padding: 15 30; -fx-background-radius: 25;" text="Start Game">
+                <effect>
+                    <DropShadow color="rgba(0,0,0,0.3)" radius="10" spread="0.1" />
+                </effect>
+            </Button>
+        </VBox>
+
+        <Button fx:id="btnBack" layoutX="12.0" prefHeight="68.0" prefWidth="108.0" style="-fx-font-size: 18; -fx-background-color: #e17055; -fx-text-fill: white; -fx-background-radius: 20; -fx-padding: 10 20;" text="⬅ Back" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="20">
+            <effect>
+                <DropShadow color="rgba(0,0,0,0.3)" radius="5" spread="0.1" />
+            </effect>
+        </Button>
+    </AnchorPane>
+</StackPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mediaworking.GameSmiths.controllers.MultiplayerBoardController"
+            style="-fx-background-color: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); -fx-padding: 20;"
+            prefWidth="800" prefHeight="600">
+
+    <!-- Top Section for Current Player -->
+    <top>
+        <VBox alignment="CENTER" spacing="10.0">
+            <Label fx:id="currentPlayerLabel" text="Player's Turn" alignment="CENTER"
+                   style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #FFD700; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 6, 0, 0, 0);" />
+        </VBox>
+    </top>
+
+    <!-- Center Section for Player Board -->
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true"
+                    style="-fx-background: transparent;
+                           -fx-background-color: rgba(255,255,255,0.1);
+                           -fx-border-color: #FFD700;
+                           -fx-border-width: 2;
+                           -fx-border-radius: 10;
+                           -fx-padding: 10;">
+            <content>
+                <VBox alignment="CENTER" spacing="20.0"
+                      style="-fx-background-color: rgba(255,255,255,0.15);
+                             -fx-background-radius: 15;
+                             -fx-padding: 20;">
+                    <effect>
+                        <DropShadow color="#00000040" radius="10" spread="0.1" />
+                    </effect>
+
+                    <Label text="Current Board" alignment="CENTER"
+                           style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF;" />
+
+                    <GridPane fx:id="playerBoard" hgap="5" vgap="5"
+                              style="-fx-background-color: rgba(0,0,0,0.3);
+                                     -fx-padding: 15;
+                                     -fx-border-color: #FFD700;
+                                     -fx-border-width: 3;
+                                     -fx-border-radius: 10;">
+                    </GridPane>
+                </VBox>
+            </content>
+            <style>
+                /* Custom Scroll Bar Styling */
+                .scroll-pane .thumb {
+                -fx-background-color: linear-gradient(#FFD700, #FF6347); /* Thumb gradient */
+                -fx-background-radius: 10; /* Rounded thumb */
+                }
+                .scroll-pane .track {
+                -fx-background-color: rgba(0, 0, 0, 0.3); /* Track background */
+                }
+                .scroll-pane .increment-button, .scroll-pane .decrement-button {
+                -fx-background-color: transparent; /* Remove button backgrounds */
+                }
+            </style>
+        </ScrollPane>
+    </center>
+
+    <!-- Bottom Section for Navigation -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 20;">
+            <Button fx:id="returnToMenuButton" text="Return to Menu" onAction="#returnToMenu"
+                    style="-fx-background-color: linear-gradient(#FFD700, #FFA500);
+                           -fx-text-fill: #000000;
+                           -fx-font-size: 20px;
+                           -fx-font-weight: bold;
+                           -fx-padding: 10 20;
+                           -fx-background-radius: 25;
+                           -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 6, 0, 0, 0);" />
+            <Button fx:id="exitButton" text="Exit Game" onAction="#exitGame"
+                    style="-fx-background-color: linear-gradient(#E74C3C, #C0392B);
+                           -fx-text-fill: #FFFFFF;
+                           -fx-font-size: 20px;
+                           -fx-font-weight: bold;
+                           -fx-padding: 10 20;
+                           -fx-background-radius: 25;
+                           -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 6, 0, 0, 0);" />
+        </HBox>
+    </bottom>
+</BorderPane>

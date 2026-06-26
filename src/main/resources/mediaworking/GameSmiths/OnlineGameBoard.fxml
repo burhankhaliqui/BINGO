@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="mediaworking.GameSmiths.controllers.OnlineGameBoardController"
+            style="-fx-background-color: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); -fx-padding: 20;">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10.0">
+            <Label fx:id="statusLabel" text="Waiting for game to start..." alignment="CENTER"
+                   style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #FFD700; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 6, 0, 0, 0);" />
+        </VBox>
+    </top>
+
+    <center>
+        <HBox spacing="20.0">
+            <!-- Game Board Section -->
+            <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: rgba(255,255,255,0.15); -fx-background-radius: 15; -fx-padding: 20;">
+                <effect>
+                    <DropShadow color="#00000040" radius="10" spread="0.1" />
+                </effect>
+
+                <Label text="Online Game Board" alignment="CENTER"
+                       style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF;" />
+
+                <HBox alignment="CENTER" spacing="20.0">
+                    <Label fx:id="yourTurnLabel" text="Your Turn" visible="false"
+                           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2ECC71;" />
+                    <Label fx:id="opponentTurnLabel" text="Opponent's Turn" visible="false"
+                           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #E74C3C;" />
+                </HBox>
+
+                <GridPane fx:id="boardGrid" alignment="CENTER" hgap="5" vgap="5"
+                          style="-fx-background-color: rgba(0,0,0,0.3); -fx-padding: 15; -fx-border-color: #FFD700; -fx-border-width: 3; -fx-border-radius: 10;">
+                </GridPane>
+            </VBox>
+
+            <!-- Chat Section -->
+            <!-- Chat Section -->
+            <!-- Chat Section -->
+            <!-- Chat Section -->
+            <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-background-radius: 15; -fx-padding: 20;">
+                <Label text="Chat" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF;" />
+                <TextArea fx:id="chatArea" editable="false" wrapText="true" prefWidth="250" prefHeight="300"
+                          style="-fx-control-inner-background: black; -fx-text-fill: white; -fx-padding: 10;">
+                    <style>
+                        .text-area .content {
+                        -fx-background-color: black;
+                        }
+                        .text-area {
+                        -fx-text-fill: white;
+                        }
+                        .text-area .text {
+                        -fx-fill: white;
+                        }
+                    </style>
+                </TextArea>
+                <HBox spacing="10.0">
+                    <TextField fx:id="messageField" promptText="Type your message..." prefWidth="200"
+                               style="-fx-background-color: rgba(255,255,255,0.2); -fx-text-fill: #FFFFFF;" />
+                    <Button fx:id="sendButton" text="Send" onAction="#sendChatMessage"
+                            style="-fx-background-color: #3498db; -fx-text-fill: #FFFFFF; -fx-padding: 5 10;" />
+                </HBox>
+            </VBox>
+
+        </HBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" visible="false" spacing="20.0" style="-fx-padding: 20;">
+            <Button fx:id="exitButton" text="Exit Game" onAction="#exitGame"
+                    style="-fx-background-color: linear-gradient(#E74C3C, #C0392B);
+                           -fx-text-fill: #FFFFFF;
+                           -fx-font-size: 20px;
+                           -fx-font-weight: bold;
+                           -fx-padding: 10 20;
+                           -fx-background-radius: 25;
+                           -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 6, 0, 0, 0);" />
+        </HBox>
+    </bottom>
+</BorderPane>

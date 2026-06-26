@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediaworking.GameSmiths.controllers.MenuController">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="600" fitWidth="800" preserveRatio="false" smooth="true">
+        <image>
+            <Image url="@1Menu.jpg" />
+        </image>
+    </ImageView>
+
+    <!-- Content -->
+    <AnchorPane>
+        <!-- Settings Button (Top Left) - Hidden -->
+        <Button fx:id="settingsButton" onAction="#onSettingsButtonClicked" prefHeight="50" prefWidth="50" style="-fx-background-color: #FFC107; -fx-text-fill: #1a2a6c; -fx-background-radius: 25;" text="⚙" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" radius="10" />
+            </effect>
+        </Button>
+
+        <!-- Exit Button (Top Right) - Hidden -->
+        <Button fx:id="exitButton" onAction="#onExitButtonClicked" prefHeight="50" prefWidth="50" style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-background-radius: 25;" text="✖" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" radius="10" />
+            </effect>
+        </Button>
+
+        <VBox alignment="CENTER" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <Label style="-fx-text-fill: white;">
+                <font>
+                    <Font name="System Bold" size="60.0" />
+                </font>
+                <effect>
+                    <DropShadow color="#00000080" radius="15" spread="0.2" />
+                </effect>
+            </Label>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+
+            <Button fx:id="playButton" onAction="#onPlayButtonClicked" prefHeight="45.0" prefWidth="119.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 30;" text="Play">
+                <font>
+                    <Font size="28.0" />
+                </font>
+                <effect>
+                    <DropShadow color="#00000080" radius="10" />
+                </effect>
+            </Button>
+
+            <Button fx:id="howToPlayButton" onAction="#onHowToPlayButtonClicked" prefHeight="51.0" prefWidth="189.0" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 30;" text="How to Play">
+                <font>
+                    <Font size="28.0" />
+                </font>
+                <effect>
+                    <DropShadow color="#00000080" radius="10" />
+                </effect>
+            </Button>
+
+            <Label fx:id="statusLabel" style="-fx-text-fill: white;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <effect>
+                    <DropShadow color="#00000080" radius="5" />
+                </effect>
+            </Label>
+        </VBox>
+    </AnchorPane>
+</StackPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="mediaworking.GameSmiths.MediaPlayerController"
+           prefHeight="600.0" prefWidth="850.0">
+
+    <MediaView fx:id="mediaView" preserveRatio="false"/>
+
+</StackPane>

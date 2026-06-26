@@ -1,0 +1,48 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.scene.control.*?>-->
+<!--<?import javafx.scene.layout.*?>-->
+<!--<?import javafx.geometry.Insets?>-->
+
+<!--<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="mediaworking.GameSmiths.GameBoardController"-->
+<!--            style="-fx-background-color: linear-gradient(to bottom right, #1a2a6c, #b21f1f, #fdbb2d);">-->
+<!--    <top>-->
+<!--        <VBox alignment="CENTER" spacing="10">-->
+<!--            <padding>-->
+<!--                <Insets top="20" right="20" bottom="20" left="20"/>-->
+<!--            </padding>-->
+<!--            <Label fx:id="currentPlayerLabel" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #ffffff; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 5, 0, 0, 1);"/>-->
+<!--        </VBox>-->
+<!--    </top>-->
+
+<!--    <center>-->
+<!--        <HBox alignment="CENTER" spacing="50">-->
+<!--            <VBox fx:id="player1Container" alignment="CENTER" spacing="10"-->
+<!--                  style="-fx-background-color: rgba(255,255,255,0.2); -fx-padding: 20; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 5);">-->
+<!--                <Label text="Player 1" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #ffffff; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 0, 1);"/>-->
+<!--                <GridPane fx:id="player1Board" alignment="CENTER" hgap="5" vgap="5" style="-fx-background-color: rgba(255,255,255,0.1); -fx-padding: 10; -fx-background-radius: 10;"/>-->
+<!--            </VBox>-->
+<!--            <VBox fx:id="player2Container" alignment="CENTER" spacing="10"-->
+<!--                  style="-fx-background-color: rgba(255,255,255,0.2); -fx-padding: 20; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 5);">-->
+<!--                <Label text="Player 2" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #ffffff; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 0, 1);"/>-->
+<!--                <GridPane fx:id="player2Board" alignment="CENTER" hgap="5" vgap="5" style="-fx-background-color: rgba(255,255,255,0.1); -fx-padding: 10; -fx-background-radius: 10;"/>-->
+<!--            </VBox>-->
+<!--        </HBox>-->
+<!--    </center>-->
+
+<!--    <bottom>-->
+<!--        <HBox alignment="CENTER" spacing="20">-->
+<!--            <padding>-->
+<!--                <Insets top="20" right="20" bottom="20" left="20"/>-->
+<!--            </padding>-->
+<!--            <Button fx:id="returnToMenuButton" text="Return to Menu" onAction="#returnToMenu"-->
+<!--                    style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 12 24; -fx-background-radius: 25; -fx-background-color: #3498db; -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);">-->
+<!--                <HBox.margin>-->
+<!--                    <Insets right="10"/>-->
+<!--                </HBox.margin>-->
+<!--            </Button>-->
+<!--            <Button fx:id="exitButton" text="Exit Game" onAction="#exitGame"-->
+<!--                    style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 12 24; -fx-background-radius: 25; -fx-background-color: #e74c3c; -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);"/>-->
+<!--        </HBox>-->
+<!--    </bottom>-->
+<!--</BorderPane>-->
